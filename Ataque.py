@@ -1,10 +1,11 @@
 class Ataque ():
     nombre : str
-    poder_base : float
+    hp: int = 100
+    dano : float
     multiplicador : float = 1.0
     def __init__ (self,nombre, poder_base, *multiplicador):
         self.nombre = nombre
-        self.poder_base = poder_base
+        self.dano = poder_base
         self.multiplicador =multiplicador
 
 chorro_de_agua = Ataque('Chorro de Agua', float(12.0), float(1.0) )
